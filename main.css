@@ -10,7 +10,8 @@ body{
     }
     #two, #three{
         text-align: left;
-        margin-left: 400px;
+        margin-left: 25%;
+        padding-right: 25%;
     }
     
     .footeroverview{
