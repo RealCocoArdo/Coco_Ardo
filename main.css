@@ -1,0 +1,10 @@
+body{
+    margin: 0;
+    font-style: monospace;
+    color: #FFFFFF;
+    background-color: #222222;
+    text-align: center;
+}
+    #one{
+        margin-top: 100px;
+    }
