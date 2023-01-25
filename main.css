@@ -8,7 +8,7 @@ body{
     #one{
         margin-top: 50px;
     }
-    #two, #three{
+    #two, #three, #four{
         text-align: left;
         margin-left: 25%;
         padding-right: 25%;
@@ -62,3 +62,19 @@ body{
                     .listcontact li a:hover{
                         color: rgb(70, 206, 240);
                     }
+
+@media (max-width:1000px) {
+    #two, #three, #four{
+        margin-left: 20%;
+        padding-right: 20%;
+    }
+        .listoverview li img{
+            width: 80px;    
+        }
+    section{
+        margin-bottom: 50px;
+    }
+    .footercontact{
+        font-size: 40px;
+    }
+}
