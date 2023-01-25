@@ -38,10 +38,10 @@ body{
                 .listoverview li a:hover{
                     opacity: 0.5;
                 }
-    .footerimpressum{
+    .footercontact{
         background: #151515;
     }
-        .listimpressum{
+        .listcontact{
             list-style-type: none;
             margin: 0%;
             padding-left: 0%;
@@ -49,16 +49,16 @@ body{
             flex-direction: row;
             justify-content: center;
         }
-            .listimpressum li{
+            .listcontact li{
                 margin: 0%;
                 padding: 0%;
                 padding-right: 50px;
                 padding-left: 50px;
             }
-                .listimpressum li a{
+                .listcontact li a{
                     color: #FFFFFF;
                     text-decoration: none;                    
                 }
-                    .listimpressum li a:hover{
+                    .listcontact li a:hover{
                         color: rgb(70, 206, 240);
                     }
