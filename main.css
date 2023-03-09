@@ -14,10 +14,10 @@ body{
         padding-right: 25%;
     }
         #two a, #three a, #four a{
-            color: purple;
+            color: aqua;
         }
         #two a:hover, #three a:hover, #four a:hover{
-            color: aqua;
+            color: lightcoral;
         }
     
     .footeroverview{
