@@ -19,7 +19,20 @@ body{
         #two a:hover, #three a:hover, #four a:hover{
             color: lightcoral;
         }
-    
+        
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            }
+            td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+            }
+            tr:nth-child(even) {
+            background-color: #312f2f;
+            }
+
     .footeroverview{
         background: #151515;
         padding: 2.2vh 0 2.2vh 0;
