@@ -33,6 +33,12 @@ body{
             background-color: #312f2f;
             }
 
+            .mnpub{
+                display: none;
+            }
+            .dnpub{
+                display: block;
+            }
     .footeroverview{
         background: #151515;
         padding: 2.2vh 0 2.2vh 0;
@@ -93,6 +99,12 @@ body{
         }
     section{
         margin-bottom: 50px;
+    }
+    .dnpub{
+        display: none;
+    }
+    .mnpub{
+        display: block;
     }
     .footercontact{
         font-size: 40px;
