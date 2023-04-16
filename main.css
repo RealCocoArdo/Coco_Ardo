@@ -51,7 +51,8 @@ body{
                 padding-left: 25px;
             }
                 .listoverview li img{
-                    width: 45px;    
+                    width: 45px;
+                    height: 45px;    
                 }
                 .listoverview li a:hover{
                     opacity: 0.5;
@@ -87,7 +88,8 @@ body{
         padding-right: 15%;
     }
         .listoverview li img{
-            width: 80px;    
+            width: 80px;
+            height: 80px;    
         }
     section{
         margin-bottom: 50px;
