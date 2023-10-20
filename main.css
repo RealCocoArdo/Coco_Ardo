@@ -5,6 +5,9 @@ body{
     background-color: #222222;
     text-align: center;
 }
+h2{
+    font-size: 18px;
+}
     #one{
         margin-top: 50px;
     }
@@ -77,8 +80,9 @@ body{
             .listcontact li{
                 margin: 0%;
                 padding: 0%;
-                padding-right: 50px;
-                padding-left: 50px;
+                padding-right: 25px;
+                padding-left: 25px;
+                color: rgb(70, 206, 240);
             }
                 .listcontact li a{
                     color: #FFFFFF;
@@ -89,6 +93,12 @@ body{
                     }
 
 @media (max-width:1000px) {
+    h3{
+        font-size: 40px;
+    }
+    h2{
+        font-size: 35px;
+    }
     #two, #three, #four{
         margin-left: 15%;
         padding-right: 15%;
