@@ -2,31 +2,138 @@ html{
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
+
 body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #232533;
     margin: 0;
-    font-style: monospace;
+    padding: 1%;
     color: #FFFFFF;
-    background-color: #222222;
-    text-align: center;
+    font-size: 21px;
 }
-h2{
-    font-size: 18px;
-}
-    #one{
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 50px 0 50px;
+    }
+        .navlogo{
+            margin-top: 10px;
+        }
+            .navlogo img{
+                width: 80px;
+            }
+        .topbar{
+            list-style-type: none;
+            margin: 0;
+            display: flex;
+            line-height: 100px;
+            font-size: 20px;
+        }
+            .topbar li{
+                margin: 0 0 0 50px;
+                color: rgb(70, 206, 240);            
+            }
+                .topbar li a{
+                    color: #FDBE00;
+                    text-decoration: none;
+                }
+                    .topbar li a:hover{
+                        color: rgb(70, 206, 240);
+                    }
+            .topbarmenu{
+                margin-left: 50px;
+            }
+                .topbarmenu button{
+                    background-color: transparent; 
+                    border-width: 0; 
+                    font-family: inherit; 
+                    font-size: inherit; 
+                    font-style: inherit; 
+                    font-weight: inherit; 
+                    line-height: inherit; 
+                    padding: 0;
+
+                    display: flex;
+                    color: #FDBE00;
+                    margin-top: 30px;
+                }
+                .bar{
+                    border-radius: 10px;
+                    line-height: 30px;
+                    height: 35px;
+                    width: 6px;
+                    margin: 2px;
+                    flex-direction: row;
+                    background-color: #FDBE00;
+                }
+                .dropbtn {
+                    cursor: pointer;
+                }  
+                    .dropbtn:hover, .dropbtn:focus {
+                        opacity: 0.8;
+                    }
+                    .dropdown{
+                        display: inline-block;
+                    }
+                        .dropdown-content{
+                            right: 0;
+                            width: 100%;
+                            margin: 30px 0 0 0; 
+                            display: none;
+                            position: absolute;
+                            background: #222222;
+                            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                            z-index: 1;
+                        }
+                            .dropdown-content a {
+                                text-align: right;
+                                margin-right: 140px;
+                                text-decoration: none;
+                                color: #FDBE00;
+                                display: block;
+                            }
+                                #blue{
+                                    color: rgb(70, 206, 240);
+                                }
+                                .dropdown-content a:hover{
+                                    color: rgb(70, 206, 240);
+                                }
+                                    .show {
+                                        display:block;
+                                    }
+    
+    .title{
         margin-top: 50px;
+        margin-bottom: 100px;
+        text-align: center;
+        font-size: 45px;
     }
-    #two, #three, #four{
+    .subtitle{
+        margin: 100px 20% 0 20%;
         text-align: left;
-        margin-left: 25%;
-        padding-right: 25%;
+        font-size: 30px;
     }
-        #two a, #three a, #four a{
-            color: aqua;
+    .loremipsum{
+        margin: 0 25% 0 25%;
+        text-align: center;
+    }
+        .loremipsum a{
+            color: #FDBE00;
         }
-        #two a:hover, #three a:hover, #four a:hover{
-            color: lightcoral;
+            .loremipsum a:hover{
+                color: rgb(70, 206, 240);
+            }
+    .loremipsumleft{
+        margin: 0 25% 0 25%;
+        text-align: left;
+    }
+        .loremipsumleft a{
+            color: #FDBE00;
         }
-        
+            .loremipsumleft a:hover{
+                color: rgb(70, 206, 240);
+            }
+
         table {
             border-collapse: collapse;
             width: 100%;
@@ -37,82 +144,147 @@ h2{
             padding: 8px;
             }
             tr:nth-child(even) {
-            background-color: #312f2f;
+            /* background-color: #312f2f; */
+            background-color: #062d36;
             }
 
+    .listoverview{
+        list-style-type: none;
+        margin: 0%;
+        margin-top: 150px;
+        padding-left: 0%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+        .listoverview li{
+            padding-top: 1%;
+            padding-right: 2.5%;
+            padding-left: 2.5%;
+        }
+            .listoverview li img{
+                width: 45px;
+                height: 45px;
+            }
+            .listoverview li a:hover{
+                opacity: 0.5;
+            }
+
+        .listimpressum{
+            list-style-type: none;
+            margin: 0%;
+            padding-left: 0%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+            .listimpressum li{
+                margin: 0%;
+                padding: 0%;
+                padding-right: 2.5%;
+                padding-left: 2.5%;
+            }
+                .listimpressum li a{
+                    color: grey;
+                    text-decoration: none;                    
+                }
+                    .listimpressum li a:hover{
+                        color: rgb(70, 206, 240);
+                    }
+    
             .mnpub{
                 display: none;
             }
             .dnpub{
                 display: block;
             }
-    .footeroverview{
-        background: #151515;
-        padding: 2.2vh 0 2.2vh 0;
-        }
-        .listoverview{
-            list-style-type: none;
-            margin: 0%;
-            padding-left: 0%;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-        }
-            .listoverview li{
-                padding-top: 1%;
-                padding-right: 25px;
-                padding-left: 25px;
-            }
-                .listoverview li img{
-                    width: 45px;
-                    height: 45px;    
-                }
-                .listoverview li a:hover{
-                    opacity: 0.5;
-                }
-    .footercontact{
-        background: #1B1B1B;
-    }
-        .listcontact{
-            list-style-type: none;
-            margin: 0%;
-            padding-left: 0%;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-        }
-            .listcontact li{
-                margin: 0%;
-                padding: 0%;
-                padding-right: 25px;
-                padding-left: 25px;
-                color: rgb(70, 206, 240);
-            }
-                .listcontact li a{
-                    color: #FFFFFF;
-                    text-decoration: none;                    
-                }
-                    .listcontact li a:hover{
-                        color: rgb(70, 206, 240);
-                    }
+/* ###############Elements############### */
 
-@media (max-width:1000px) {
-    h3{
-        font-size: 40px;
+/* Imprint */
+.imprint{
+    text-align: left;
+}
+    .highlight{
+        color: #FDBE00;
     }
-    h2{
-        font-size: 35px;
+
+/* Projects */
+.projects{
+    margin: 0 20% 50px 20%;
+    display: flex;
+    justify-content: space-evenly;
+}
+    .projects a{
+        color: #FDBE00;
+        /* text-decoration: none; */
     }
-    #two, #three, #four{
-        margin-left: 10%;
-        padding-right: 10%;
-    }
-        .listoverview li img{
-            width: 80px;
-            height: 80px;    
+        .projects a:hover{
+            color: rgb(70, 206, 240);
         }
-    section{
+    .p1{
+        text-align: left;
+        padding: 0.5%;
+        margin-top: 8%;
+        width: 70%;
+    }
+    .p2{
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        padding-top: 70px;
+    }
+        .p2 img{
+            border: 2px solid #FDBE00;
+        }
+
+/*################################################################################### Mobile-Version: ######################################################################*/
+@media (max-width:1100px) {
+    .nav{
+        margin: 0 15px 0 0;
+        justify-content: right;
+    }
+        .navlogo{
+            display: none;
+        }
+        .topbar{
+            font-size: 18px;
+        }
+            .topbar li{
+                margin: 0 0 0 15px;
+            }
+            .topbarmenu{
+                margin-left: 20px;
+            }
+                .topbarmenu button{
+                    margin-top: 30px;
+                }
+                .bar{
+                    height: 35px;
+                }
+                    .dropdown-content a {
+                        margin-right: 65px;
+                    }
+    .title{
+        margin-top: 25px;
         margin-bottom: 50px;
+    }
+    .subtitle{
+        margin: 50px 10% 0 10%;
+        text-align: left;
+    }
+    .loremipsum{
+        margin: 0 10% 0 10%;
+        text-align: center;
+    }
+    .loremipsumleft{
+        margin: 0 10% 0 10%;
+        text-align: left;
+    }
+    table{
+        font-size: small;
+    }
+    .listoverview{
+        margin-top: 100px;
     }
     .dnpub{
         display: none;
@@ -120,7 +292,23 @@ h2{
     .mnpub{
         display: block;
     }
-    .footercontact{
-        font-size: 40px;
+
+/* ###############Elements############### */
+
+/* Projects */
+.projects{
+    margin: 0 10% 50px 10%;
+    flex-direction: column;
+}
+    .p1{
+        width: 100%;
     }
+    .p2{
+        width: 100%;
+    }
+
+}
+/*################################################################################### Light-Mode: ######################################################################*/
+@media (prefers-color-scheme: light) {
+
 }

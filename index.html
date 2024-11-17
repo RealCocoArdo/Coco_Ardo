@@ -1,44 +1,60 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Coco_Ardo</title>
-        <link rel="shortcut icon" href="pictures/Favicon.png" type="image/png">
-        <link rel="stylesheet" href="main.css">
-        <script src="main.js"></script>
-    </head>
-    <body>
-        <footer class="footeroverview">                                 <!--Social Media-->
-            <ul class="listoverview">
-                <li><a href="https://snort.social/p/npub1cj9xlvy6qd2ck8k02qw79nsf4jf4hslu94e77k6evdl8t0xa7f2syga2tw" target="_blank"><img src="pictures/Nostr.png" alt="Nostr"></a></li>
-                <li><a href="https://www.reddit.com/user/Coco_Ardo/" target="_blank"><img src="pictures/Reddit.png" alt="Reddit"></a></li>
-                <li><a href="https://discord.gg/DMP53qDM7c" target="_blank"><img src="pictures/Discord.png" alt="Discord"></a></li>
-                <li><a href="https://github.com/RealCocoArdo" target="_blank"><img src="pictures/Github.png" alt="Github"></a></li>
-            </ul>
-        </footer>
-        
-        <footer class="footercontact">
-            <ul class="listcontact">
-                <li><h5>Home</h5></li>
-                <li><h5><a href="pages/opinions.html">Opinons</a></h5></li>
-                <li><h5><a href="pages/police.html">DearPolice</a></h5></li>
-            </ul>
-        </footer>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="pictures/Favicon.png" type="image/png">
+    <link rel="stylesheet" href="main.css">
+    <meta name="lightning" content="lnurlp:Coco_Ardo@minibits.cash"/>
+    <script src="main.js"></script>
+    <title>Coco_Ardo</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="navlogo">
+            <a href="#"><img src="pictures/Coco_Ardo.png" alt="Logo" style="border-radius: 20px;"></a>
+        </div>
+        <ul class="topbar">
+            <li>Home</li>
+            <li><a href="p/projects.html">Projects</a></li>
+            <li><a href="p/opinions.html">Opinions</a></li>
+            <li><a href="p/donate.html">Donate</a></li>
+            <div class="topbarmenu">
+                <button onclick="dropping()" class="dropbtn">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="sp/bitcoin.html">Ressources on Bitcoin</a>
+                    <a href="sp/privacy.html">Ressources on Privacy</a>
+                    <a href="sp/courses.html">Courses & Help</a>
+                    <a href="sp/articles.html">Articles</a>
+                </div>
+            </div>
+        </ul>
+    </nav>
+    
+    <section class="title">
+        Coco_Ardo's Website
+    </section>
 
-        <section id="one">
-            <h1><u>My website</u></h1>
-        </section>
-        <section id="two">
-            <p>
-                <h3>Hello, </h3>
-                you found the personal website of Coco_Ardo.<br>
-                I do alot of nerdy stuff. Check out my <a href="https://github.com/RealCocoArdo" target="_blank">Github</a>.
-            </p>
-        </section>
-        <section id="three">
-            <p>
-            <h3>I got experience with</h3>
-            <h2><table>
-                <h1><tr><th>Language</th><th>Learning source</th></tr></h1>
+    <section class="loremipsumleft">
+        <p>
+            <h3>Hello, </h3>
+            you found the personal website of Coco_Ardo.<br>
+            I do alot of nerdy stuff. Check out my <a href="https://github.com/RealCocoArdo" target="_blank">Github</a>.
+            <br> But its mainly focusing around:
+            <ul>
+                <li>Bitcoin</li>
+                <li>Nostr</li>
+                <li>Privacy</li>
+            </ul>
+        </p>
+        <p>
+            I got experience with:<br>
+            <table>
+                <tr><th>Language</th><th>Learning source</th></tr>
                 <tr>
                     <td>C++</td><td>Highschool</a></td>
                 </tr>
@@ -66,26 +82,26 @@
                 <tr>
                     <td>R</td><td>University</td>
                 </tr>
-            </table></h2>
+            </table>
             <br>
-            I wouldn't say I mastered them all yet, but I'm always improving.
-            </p>
-        </section><br>
-        <section id="four">
-            <h3>What do I currently do?</h3>
-            <ul>
-                <li>I am hosting a TOR (middle) relay, a Bitcoin and Lightning node and a matrix server.</li><br>
-                <li>I develop Bitcoin mining with renewable energy & recycled hardware.</li><br>
-                <li>I manage my website project <a href="https://github.com/RealCocoArdo/BitcoinOverview" target="_blank">Bitcoin-Overview</a> for educational purposes.</li><br>
-                <li>I am a humanrights activist.</li><br>
-            </ul>
-            <br><br><br>
-        </section>
-        <footer class="footercontact">
-            <ul class="listcontact">
-                <li><h5><a href="pages/contact.html">Contact</a></h5></li>
-                <li><h5><a href="https://github.com/RealCocoArdo/Coco_Ardo/blob/main/LICENSE.md" target="_blank">@<script>document.write(/\d{4}/.exec(Date())[0])</script>_License</a></h5></li>
-            </ul>
-        </footer>
-    </body>
+            I wouldn't say I mastered them yet, but I'm always improving.
+        </p>
+    </section>
+
+    <footer>
+        <ul class="listoverview">
+            <li><a href="https://snort.social/p/npub1cj9xlvy6qd2ck8k02qw79nsf4jf4hslu94e77k6evdl8t0xa7f2syga2tw" target="_blank"><img src="pictures/Nostr.png" alt="Nostr"></a></li>
+            <li><a href="https://www.reddit.com/user/Coco_Ardo/" target="_blank"><img src="pictures/Reddit.png" alt="Reddit"></a></li>
+            <li><a href="https://discord.gg/DMP53qDM7c" target="_blank"><img src="pictures/Discord.png" alt="Discord"></a></li>
+            <li><a href="https://github.com/RealCocoArdo" target="_blank"><img src="pictures/Github.png" alt="Github"></a></li>
+        </ul>
+    </footer>
+    <footer>
+        <ul class="listimpressum">
+            <li><h5><a href="p/contact.html">Contact</a></h5></li>
+            <li><h5><a href="p/privacyPolicy.html">Privacy policy</a></h5></li>
+            <li><h5><a href="https://github.com/RealCocoArdo/Coco_Ardo/blob/main/LICENSE.md" target="_blank">@<script>document.write(/\d{4}/.exec(Date())[0])</script> License</a></h5></li>
+        </ul>
+    </footer>
+</body>
 </html>
