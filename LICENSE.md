@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2023 Coco_Ardo
+Copyright (c) [2023] [Coco_Ardo]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
