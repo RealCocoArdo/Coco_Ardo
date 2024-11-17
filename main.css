@@ -101,52 +101,6 @@ body{
                                     .show {
                                         display:block;
                                     }
-    
-    .title{
-        margin-top: 50px;
-        margin-bottom: 100px;
-        text-align: center;
-        font-size: 45px;
-    }
-    .subtitle{
-        margin: 100px 20% 0 20%;
-        text-align: left;
-        font-size: 30px;
-    }
-    .loremipsum{
-        margin: 0 25% 0 25%;
-        text-align: center;
-    }
-        .loremipsum a{
-            color: #FDBE00;
-        }
-            .loremipsum a:hover{
-                color: rgb(70, 206, 240);
-            }
-    .loremipsumleft{
-        margin: 0 25% 0 25%;
-        text-align: left;
-    }
-        .loremipsumleft a{
-            color: #FDBE00;
-        }
-            .loremipsumleft a:hover{
-                color: rgb(70, 206, 240);
-            }
-
-        table {
-            border-collapse: collapse;
-            width: 100%;
-            }
-            td, th {
-            border: 1px solid #dddddd;
-            text-align: left;
-            padding: 8px;
-            }
-            tr:nth-child(even) {
-            /* background-color: #312f2f; */
-            background-color: #062d36;
-            }
 
     .listoverview{
         list-style-type: none;
@@ -200,7 +154,6 @@ body{
             }
 /* ###############Elements############### */
 
-/* Imprint */
 .imprint{
     text-align: left;
 }
@@ -208,7 +161,52 @@ body{
         color: #FDBE00;
     }
 
-/* Projects */
+    
+    .title{
+        margin: 50px 5% 100px 5%;
+        text-align: center;
+        font-size: 45px;
+    }
+    .subtitle{
+        margin: 100px 20% 0 20%;
+        text-align: left;
+        font-size: 30px;
+    }
+    .loremipsum{
+        margin: 0 25% 0 25%;
+        text-align: center;
+    }
+        .loremipsum a{
+            color: #FDBE00;
+        }
+            .loremipsum a:hover{
+                color: rgb(70, 206, 240);
+            }
+    .loremipsumleft{
+        margin: 0 25% 0 25%;
+        text-align: left;
+    }
+        .loremipsumleft a{
+            color: #FDBE00;
+        }
+            .loremipsumleft a:hover{
+                color: rgb(70, 206, 240);
+            }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            }
+            td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+            }
+            tr:nth-child(even) {
+            /* background-color: #312f2f; */
+            background-color: #062d36;
+            }
+
 .projects{
     margin: 0 20% 50px 20%;
     display: flex;
@@ -265,11 +263,10 @@ body{
                         margin-right: 65px;
                     }
     .title{
-        margin-top: 25px;
-        margin-bottom: 50px;
+        margin: 25px 5% 50px 5%;
     }
     .subtitle{
-        margin: 50px 10% 0 10%;
+        margin: 100px 10% 0 10%;
         text-align: left;
     }
     .loremipsum{
