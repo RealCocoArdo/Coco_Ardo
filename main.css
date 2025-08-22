@@ -3,62 +3,6 @@ html{
     overflow-x: hidden;
 }
 
-    /* privacypolicy-Overlay */
-    #privacypolicy-popup{
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      background-color: rgba(0, 0, 0, 0.85);
-      color: white;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      z-index: 9999;
-      padding: 20px;
-      text-align: center;
-    }
-
-    #privacypolicy-box{
-      background-color: rgb(164, 172, 175);
-      color: #000000;
-      padding: 30px;
-      border-radius: 10px;
-      max-width: 600px;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-      text-align: center;
-    }
-
-    #privacypolicy-popup h2{
-      margin-bottom: 1rem;
-    }
-
-    #privacypolicy-popup p{
-      max-width: 600px;
-      margin-bottom: 1.5rem;
-    }
-
-    #redb{
-      padding: 10px 20px;
-      font-size: 16px;
-      cursor: pointer;
-      background-color: rgba(255, 0, 0, 0.719);
-      color: white;
-      border: none;
-      border-radius: 5px;
-    }
-    #blueb{
-      padding: 10px 20px;
-      font-size: 16px;
-      cursor: pointer;
-      background-color: green;
-      color: white;
-      border: none;
-      border-radius: 5px;
-    }
-
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #232533;
@@ -208,8 +152,60 @@ body{
             .dnpub{
                 display: block;
             }
-/* ###############Elements############### */
 
+/* ############### PrivacyPolicy-Overlay ############### */
+    #privacypolicy-popup{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.85);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      text-align: center;
+    }
+        #privacypolicy-popup h2{
+        margin-bottom: 1rem;
+        }
+        #privacypolicy-popup p{
+        margin-bottom: 1.5rem;
+        }
+
+    #privacypolicy-box{
+      background-color: rgb(164, 172, 175);
+      color: #000000;
+      padding: 30px;
+      border-radius: 10px;
+      width: 60vw;
+      max-width: 600px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+      text-align: center;
+    }
+
+    #redb{
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: rgb(10, 73, 155);
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+    #blueb{
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: rgb(10, 73, 155);
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+
+/* ############### Elements ############### */
 .imprint{
     text-align: left;
 }
@@ -266,7 +262,7 @@ body{
 .projects{
     margin: 0 20% 50px 20%;
     display: flex;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
 }
     .projects a{
         color: #FDBE00;
@@ -279,15 +275,15 @@ body{
         text-align: left;
         padding: 0.5%;
         margin-top: 8%;
-        width: 70%;
+        width: 80%;
     }
     .p2{
-        width: 30%;
-        display: flex;
-        justify-content: center;
+        width: 15vw;
         padding-top: 70px;
+        margin-right: 3vw;
     }
         .p2 img{
+            width: 15vw;
             border: 2px solid #FDBE00;
         }
 
@@ -298,6 +294,41 @@ body{
     .loremipsumpic img{
         width: 100%;
     }
+
+.boxes{
+    margin: 0 25% 0 25%;
+    text-align: left;
+}
+    .boxes a{
+        color: #FDBE00;
+    }
+
+    .flexbox{
+        display: flex;
+    }
+    .boxes button{
+        background: #272933;
+        border: #FFFFFF 1px solid;
+        color: #FFFFFF;
+        width: 45%;
+        height: 15vh;
+        margin-right: 2.5vw;
+    }
+
+#d0, #d1, #d2, #d3, #d4, #d5, #d6, #d7, #d8, #d9, #d10, #d11, #d12{
+    display: none;
+}
+
+#searchInput {
+  padding: 8px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+#searchResults div {
+  padding: 6px;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid #ccc;
+}
 
 /*################################################################################### Mobile-Version: ######################################################################*/
 @media (max-width:1100px) {
@@ -354,6 +385,14 @@ body{
         display: block;
     }
 
+/* ############### PrivacyPolicy-Overlay ############### */
+#privacypolicy-popup{
+    right: 0;
+}
+    #redb{
+        margin-bottom: 10px;
+    }
+
 /* ###############Elements############### */
 
 /* Projects */
@@ -367,6 +406,13 @@ body{
     .p2{
         width: 100%;
     }
+        .p2 img{
+            width: 100%;
+        }
+
+.boxes{
+    margin: 0 7.5% 0 7.5%;
+}
 
 }
 /*################################################################################### Light-Mode: ######################################################################*/
