@@ -54,23 +54,45 @@
         </ul>
     </nav>
     <section class="title">
-        Resources on Bitcoin
-    </section>
-    <section class="loremipsumleft">
-        <a href="http://xxvlayp34f6yysj5bwkg4euicflxwhbkdtl5l4uvvev3qdi42aqhycad.onion/" target="_blank">BitcoinOverview</a> (TOR-Browser required)
-         is my own attempt to provide you with everything you need.
-         I'm sure that it has most things you are looking for. Just click your way through it.
-        <br><br><br><br>
-        <u><b>Some quick links:</b></u>
-        <ul>
-            <li><a href="http://xxvlayp34f6yysj5bwkg4euicflxwhbkdtl5l4uvvev3qdi42aqhycad.onion//pages/Knowledge.html" target="_blank">How does Bitcoin work?</a></li>
-            <li><a href="http://xxvlayp34f6yysj5bwkg4euicflxwhbkdtl5l4uvvev3qdi42aqhycad.onion//subpages/Wallet.html" target="_blank">Wallet Infos</a></li>
-            <li><a href="https://btcmap.org/" target="_blank">Where can I spent my coins?</a></li>
-            <li><a href="https://danheld.gay/" target="_blank">How to mine Bitcoins</a></li>
-            <li><a href="https://learning.chaincode.com/" target="_blank">Learn to code</a></li>
-        </ul>
+        Coco_Ardo's <br> small<br> Bitcoin searchengine
     </section>
 
+    <section class="loremipsumleft">
+        <input type="text" id="searchInput" placeholder="Search..." />
+        <br><br><div id="searchResults"></div>
+
+        <script src="../search-data.js"></script>
+        <script>
+        const input = document.getElementById('searchInput');
+        const resultsDiv = document.getElementById('searchResults');
+
+        input.addEventListener('input', function () {
+        const query = input.value.toLowerCase();
+        resultsDiv.innerHTML = "";
+
+        if (query.length < 2) return;
+
+        const results = searchData.filter(item =>
+            item.title.toLowerCase().includes(query) ||
+            // item.content.toLowerCase().includes(query) ||
+            (item.tags && item.tags.some(tag => tag.toLowerCase().includes(query)))
+        );
+
+        if (results.length === 0) {
+            resultsDiv.innerHTML = '<p>No matches found.<br><ul><li>Try searching for single keywords instead</li><li>Upper/Lower letters dont matter</li><li>Type "Coco_Ardo" to see all results</li></ul>If you think that I am missing important keywords feel free to <a href="p/contact.html">reach out</a> to me.</p>';
+        } else {
+            results.forEach(item => {
+            const el = document.createElement("div");
+            el.innerHTML = `
+                <a href="${item.url}" target="_blank"><strong>${item.title}</strong></a><br>
+                <small>${item.content.substring(0, 100)}...</small>
+            `;
+            resultsDiv.appendChild(el);
+            });
+        }
+        });
+        </script>
+    </section>
 
     <footer>
         <ul class="listoverview">
