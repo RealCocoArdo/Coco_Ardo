@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../pictures/Favicon.png" type="image/png">
+    <link rel="stylesheet" href="../main.css">
+    <meta name="lightning" content="lnurlp:Coco_Ardo@minibits.cash"/>
+    <script src="../main.js"></script>
+    <title>Coco_Ardo</title>
+</head>
+<body>
+    
+  <!-- privacypolicy Popup -->
+  <div id="privacypolicy-popup">
+    <div id="privacypolicy-box">
+    <h2>Privacy policy</h2>
+    <p>
+      This website does not use cookies and does not collect any personal data.
+      This notice is displayed in compliance with the European GDPR law. 
+      <br><br> By clicking "I understand" you confirm that you have read this information.
+      "I don't consent" will lead you to a wikipedia article about the European GDPR law.
+    </p>
+    <button onclick="declineprivacypolicy()" id="redb">I don't consent</button>
+    <button onclick="acceptprivacypolicy()" id="blueb">I understand</button>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div id="main-content">
+    <nav class="nav">
+        <div class="navlogo">
+            <a href="../index.html"><img src="../pictures/Coco_Ardo.png" alt="Logo" style="border-radius: 20px;"></a>
+        </div>
+        <ul class="topbar">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../p/projects.html">Projects</a></li>
+            <li><a href="../p/opinions.html">Opinions</a></li>
+            <li><a href="../p/donate.html">Donate</a></li>
+            <div class="topbarmenu">
+                <button onclick="dropping()" class="dropbtn">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="../sp/bitcoin.html">Resources on Bitcoin</a>
+                    <a href="../sp/privacy.html">Resources on Privacy</a>
+                    <a href="../sp/courses.html">Courses</a>
+                    <a href="../sp/help.html">Help</a>
+                    <a href="../sp/articles.html">Articles</a>
+                </div>
+            </div>
+        </ul>
+    </nav>
+    
+    
+    <section class="title">
+        Donate for a good cause
+    </section>
+
+    <section class="loremipsumleft">
+        <h2>Disclaimer </h2>
+        <div class="mobilesize2">This is not paid advertisment.<br>
+        The selection of donation projects was made according to self set Bitcoin criteria.</div>
+        <ul>
+            <li>Humanrights</li>
+            <li>Privacy</li>
+            <li>Cybersecurity</li>
+            <li>Open-source</li>
+            <li>P2P</li>
+        </ul>
+    </section>
+
+    <section class="boxes">
+        <br><h2>NGO's and projects </h2>
+    
+        <div class="flexbox">
+            <button onclick="hide('d1')"><h2>Human rigths foundation</h2></button>
+            <button onclick="hide('d2')"><h2>Amnesty International</h2></button>
+        </div>
+            <br><div id="d1">
+                <h3>Human Rights Foundation</h3>
+                The Human Rights Foundation (HRF) is a non-profit organization that focuses 
+                on promoting and protecting human rights globally, with an emphasis on closed 
+                societies. HRF organizes the Oslo Freedom Forum. The Human Rights Foundation 
+                was founded in 2005 by Thor Halvorssen Mendoza, a Venezuelan film producer and 
+                human rights advocate. The current chairman is Russian chess grandmaster Garry 
+                Kasparov, and Javier El-Hage is the current chief legal officer. The foundation's 
+                head office is in the Empire State Building in New York City. 
+                <br>[Source: Wikipedia] <br><br>
+
+                Note: They also finance many FOSS Bitcoin developments. Such as Seedsigner.<br><br>
+
+                Their website <br><a href="https://hrf.org/" target="_blank">https://hrf.org/</a><br><br>
+                Donate Bitcoin <br><a href="https://hrf.org/donate-bitcoin" target="_blank">https://hrf.org/donate-bitcoin</a><br><br>
+            <br></div>
+            <div id="d2">
+                <h3>Amnesty International</h3>
+                Amnesty International (also referred to as Amnesty or AI) is an international 
+                non-governmental organization focused on human rights, with its headquarters 
+                in the United Kingdom. The organization says it has more than ten million 
+                members and supporters around the world. The stated mission of the organization 
+                is to campaign for "a world in which every person enjoys all of the human rights 
+                enshrined in the Universal Declaration of Human Rights and other international 
+                human rights instruments." The organization has played a notable role on human 
+                rights issues due to its frequent citation in media and by world leaders. 
+                <br>[Source: Wikipedia] <br><br>
+
+                Their website <br><a href="https://www.amnesty.org/en" target="_blank">https://www.amnesty.org/en</a><br><br>
+                Donate Bitcoin <br><a href="https://www.amnestyusa.org/give-cryptocurrency-protect-human-rights/" target="_blank">https://www.amnestyusa.org/give-cryptocurrency-protect-human-rights/</a><br><br>
+            <br></div>
+    
+        <div class="flexbox">
+                <button onclick="hide('d3')"><h2>EFF - Electronic Frontier Foundation</h2></button>
+                <button onclick="hide('d4')"><h2>The onion routing (TOR)</h2></button>
+        </div>
+                <br><div id="d3">
+                    <h3>Electronic Frontier Foundation</h3>
+                    The Electronic Frontier Foundation is the leading nonprofit organization defending civil 
+                    liberties in the digital world. Founded in 1990, EFF champions user privacy, free expression,
+                    and innovation through impact litigation, policy analysis, grassroots activism, and 
+                    technology development. EFF's mission is to ensure that technology supports freedom, 
+                    justice, and innovation for all people of the world. 
+                    <br>[Source: Their website] <br><br>
+
+                    Their website <br><a href="https://www.eff.org/" target="_blank">https://www.eff.org/</a><br><br>
+                    Donate Bitcoin <br><a href="https://supporters.eff.org/donate/join-eff-4" target="_blank">https://supporters.eff.org/donate/join-eff-4</a><br><br>
+                <br></div>
+                <div id="d4">
+                    <h3>The Onion Routing</h3>
+                    Tor is free and open-source software for enabling anonymous communication.
+                    It directs Internet traffic through a free, worldwide, volunteer overlay 
+                    network, consisting of more than seven thousand relays, to conceal a 
+                    user's location and usage from anyone performing network surveillance or 
+                    traffic analysis. Using Tor makes it more difficult to trace a user's 
+                    Internet activity. Tor's intended use is to protect the personal privacy 
+                    of its users, as well as their freedom and ability to communicate 
+                    confidentially through IP address anonymity using Tor exit nodes. 
+                    <br>[Source: Wikipedia] <br><br>
+
+                    The website <br><a href="https://www.torproject.org/" target="_blank">https://www.torproject.org/</a><br><br>
+                    Donate Bitcoin <br><a href="https://donate.torproject.org/cryptocurrency/" target="_blank">https://donate.torproject.org/cryptocurrency/</a><br><br>
+                <br></div>
+    
+        <div class="flexbox">
+                <button onclick="hide('d5')"><h2>Wikileaks </h2></button>
+                <button onclick="hide('d6')"><h2>TailsOS</h2></button>
+        </div>
+                <br><div id="d5">
+                    <h3>WikiLeaks</h3>
+                    WikiLeaks is an international non-profit organisation that publishes news 
+                    leaks and classified media provided by anonymous sources. Its website 
+                    stated in 2015 that it had released online 10 million documents since 
+                    beginning in 2006 in Iceland. Julian Assange, an Australian Internet 
+                    activist, is generally described as its founder and director and is 
+                    currently fighting extradition to the United States over his work with 
+                    WikiLeaks. Since September 2018, Kristinn Hrafnsson has served as its 
+                    editor-in-chief. 
+                    <br>[Source: Wikipedia] <br><br>
+
+                    Note: <a href="../pages/Knowledge.html#wikileaks">check this out</a><br><br>
+
+                    Their website <br><a href="https://wikileaks.org" target="_blank">https://wikileaks.org</a><br><br>
+                    Donate Bitcoin <br><a href="https://wikileaks.org/donate" target="_blank">https://wikileaks.org/donate</a><br><br>
+                <br></div>
+                <div id="d6">
+                    <h3>Tails OperatingSystem</h3>
+                    Tails, or The Amnesic Incognito Live System, is a security-focused Debian-based 
+                    Linux distribution aimed at preserving privacy and anonymity. It connects to the
+                    Internet exclusively through the anonymity network Tor. The system is designed 
+                    to be booted as a live DVD or live USB, and leaves no digital footprint on the 
+                    machine unless explicitly told to do so. It can also be run as a virtual machine, 
+                    with some additional security risks. The Tor Project provided financial support 
+                    for its development in the beginnings of the project, and continues to do so 
+                    alongside numerous corporate and anonymous sponsors. 
+                    <br>[Source: Wikipedia]<br><br>
+                    
+                    The website <br><a href="https://tails.boum.org/install/index.en.html" target="_blank">https://tails.boum.org/install/index.en.html</a><br><br>
+                    Donate Bitcoin <br><a href="https://tails.boum.org/donate/" target="_blank">https://tails.boum.org/donate/</a><br><br>
+                <br></div>
+
+        <div class="flexbox">
+                <button onclick="hide('d7')"><h2>Seedsigner</h2></button>
+                <button onclick="hide('d8')"><h2>Citadel</h2></button>
+        </div>
+                <br><div id="d7">
+                    <h3>SeedSigner</h3>
+                    The goal of SeedSigner is to lower the cost and complexity of Bitcoin 
+                    multi-signature wallet use. To accomplish this goal, SeedSigner offers anyone 
+                    the opportunity to build a verifiably air-gapped, stateless Bitcoin signing 
+                    device using inexpensive, publicly available hardware components (usually < $60). 
+                    SeedSigner helps users save with Bitcoin by assisting with trustless private key 
+                    generation and multi-signature wallet setup, and helps users transact with Bitcoin 
+                    via a secure, air-gapped QR-exchange signing model. 
+                    <br>[Source: Their about page]<br><br>
+                    
+                    The website <br><a href="https://seedsigner.com/" target="_blank">https://seedsigner.com/</a><br><br>
+                    Donate Bitcoin <br><a href="https://seedsigner.com/donate-now/" target="_blank">https://seedsigner.com/donate-now/</a><br><br>
+                <br></div>
+                <div id="d8">
+                    <h3>Citadel</h3>
+                    Citadel allows you to run your own Bitcoin Lightning node and personal server. 
+                    It is proudly free and open-source software. Anyone is free to use, copy, study 
+                    and change the software in any way as well as distribute it for commercial purposes.
+                    <br>[Source: Github Runcitadel/citadel]<br><br>
+                    
+                    The website <br><a href="https://runcitadel.space/" target="_blank">https://runcitadel.space/</a><br><br>
+                    Donate Bitcoin <br><a href="https://geyser.fund/project/runcitadel" target="_blank">https://geyser.fund/project/runcitadel</a><br><br>
+                <br></div>
+
+        <div class="flexbox">
+                
+    </section>
+
+    <section class="boxes">
+        <br><h2> Individiums </h2>
+        
+        <div class="flexbox">
+                    <button onclick="hide('d9')"><h2>Bitcoin Developer</h2></button>
+                    <button onclick="hide('d10')"><h2>Community</h2></button>
+        </div>
+                    <br><div id="d9">
+                        <h3>Bitcoin Developer</h3>
+                        Bitcoindevlist<br><a href="https://bitcoindevlist.com/" target="_blank">https://bitcoindevlist.com/</a><br><br>
+                    <br></div>
+                    <div id="d10">
+                        <h3>Community</h3>
+                        DTails <br><a href="https://geyser.fund/project/dtails" target="_blank">https://geyser.fund/project/dtails</a><br><br>
+                        BitcoinForFairness <br><a href="https://geyser.fund/project/bff" target="_blank">https://geyser.fund/project/bff</a><br><br>
+                        Bitcoin book drop <br><a href="https://geyser.fund/project/bitcoinbookdrop" target="_blank">https://geyser.fund/project/bitcoinbookdrop</a><br><br>
+                        BTC Map <br><a href="https://geyser.fund/project/btcmap" target="_blank">https://geyser.fund/project/btcmap</a><br><br>
+                        MaxisClub <br><a href="https://geyser.fund/project/maxisclub" target="_blank">https://geyser.fund/project/maxisclub</a><br><br>
+                        Bitcoin Cowries <br><a href="https://geyser.fund/project/bitcoincowries" target="_blank">https://geyser.fund/project/bitcoincowries</a><br><br>
+                        Orange <br><a href="https://geyser.fund/project/orange" target="_blank">https://geyser.fund/project/orange</a><br><br>
+                        Street CY₿ER Gallery <br><a href="https://geyser.fund/profile/4343" target="_blank">https://geyser.fund/profile/4343</a><br><br>
+                    <br></div>
+
+        <div class="flexbox">
+                    <button onclick="hide('d11')"><h2>Bitcoin faucets</h2></button>
+                    <button onclick="hide('d0')"><h2>Bitcoin crowdfundings</h2></button>
+        </div>
+                <br><div id="d11">
+                    <h3>Bitcoin faucets</h3>
+                    There are several diffrent educational Bitcoin faucets. 
+                    They give out small amounts of Bitcoin for free, so everyone is able to efford a first expirience. 
+                    They depend on donations, so they dont run out of sats.
+                    <br><br>
+
+                    Lightningnetworkstores <br><a href="https://lightningnetworkstores.com/faucet" target="_blank">https://lightningnetworkstores.com/faucet</a><br><br>
+                    Boltcoiner <br><a href="https://boltcoiner.io/" target="_blank">https://boltcoiner.io/</a><br><br>
+                    Bitcoli <br><a href="https://bitcoli.com/en/satoshi/" target="_blank">https://bitcoli.com/en/satoshi/</a><br><br>
+                <br></div>
+                <div id="d0">
+                    <h2>Crowdfunding platforms</h2>
+                        Geyser fund <br><a href="https://geyser.fund/" target="_blank">https://geyser.fund/</a><br><br>
+                        Tallycoin <br><a href="https://tallycoin.app/" target="_blank">https://tallycoin.app/</a><br><br>
+                <br></div>
+    </section>
+
+    <footer>
+        <ul class="listoverview">
+            <li><a href="https://njump.me/npub1cj9xlvy6qd2ck8k02qw79nsf4jf4hslu94e77k6evdl8t0xa7f2syga2tw" target="_blank"><img src="../pictures/Nostr.png" alt="Nostr"></a></li>
+            <li><a href="https://www.reddit.com/user/Coco_Ardo/" target="_blank"><img src="../pictures/Reddit.png" alt="Reddit"></a></li>
+            <li><a href="https://github.com/RealCocoArdo" target="_blank"><img src="../pictures/Github.png" alt="Github"></a></li>
+            <li><a href="https://hub.docker.com/u/cocoardo" target="_blank"><img src="../pictures/docker.png" alt="Docker"></a></li>
+        </ul>
+    </footer>
+    <ul class="listimpressum">
+        <li><h5><a href="../p/contact.html">Contact</a></h5></li>
+        <li><h5><a href="privacyPolicy.html">Privacy policy</a></h5></li>
+        <li><h5><a href="https://github.com/RealCocoArdo/Coco_Ardo/blob/main/LICENSE.md" target="_blank">@<script>document.write(/\d{4}/.exec(Date())[0])</script> License</a></h5></li>
+    </ul>
+    </footer>
+  </div>
+</body>
+</html>

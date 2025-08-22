@@ -16,11 +16,30 @@ function dropping() {
     }
   }
 
+function hide(variable1) {
+    const divs = document.querySelectorAll('div[id^="d"]');
+    const targetDiv = document.getElementById(variable1);
+    
+    if (targetDiv.style.display === "block") {
+        // If the target div is already visible, hide it
+        targetDiv.style.display = "none";
+    } else {
+        // Show the target div and hide others
+        divs.forEach(div => {
+            if (div.id === variable1) {
+                div.style.display = "block";
+            } else {
+                div.style.display = "none";
+            }
+        });
+    }
+}
+
 function acceptprivacypolicy() {
       localStorage.setItem('privacypolicyAccepted', 'true');
       document.getElementById('privacypolicy-popup').style.display = 'none';
     }
-
+    
     // Check when loading whether consent has already been given
     window.addEventListener('DOMContentLoaded', () => {
       if (localStorage.getItem('privacypolicyAccepted') === 'true') {
