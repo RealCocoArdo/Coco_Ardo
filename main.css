@@ -5,7 +5,7 @@ html{
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #232533;
+    background-color: #15202b;
     margin: 0;
     padding: 1%;
     color: #FFFFFF;
@@ -220,7 +220,7 @@ body{
         font-size: 45px;
     }
     .subtitle{
-        margin: 100px 20% 0 20%;
+        margin: 80px 20% 0 20%;
         text-align: left;
         font-size: 30px;
     }
@@ -288,8 +288,8 @@ body{
         }
 
 .loremipsumpic{
-        margin-top: 30px;
-        margin-bottom: 30px;
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
     .loremipsumpic img{
         width: 100%;
@@ -413,7 +413,9 @@ body{
 .boxes{
     margin: 0 7.5% 0 7.5%;
 }
-
+    .boxes button{
+        height: 20vh;
+    }
 }
 /*################################################################################### Light-Mode: ######################################################################*/
 @media (prefers-color-scheme: light) {
