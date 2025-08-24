@@ -11,20 +11,13 @@
 </head>
 <body>
 
-  <!-- privacypolicy Popup -->
-  <div id="privacypolicy-popup">
-    <div id="privacypolicy-box">
-    <h2>Privacy policy</h2>
-    <p>
-      This website does not use cookies and does not collect any personal data.
-      This notice is displayed in compliance with the European GDPR law. 
-      <br><br> By clicking "I understand" you confirm that you have read this information.
-      "I don't consent" will lead you to a wikipedia article about the European GDPR law.
-    </p>
-    <button onclick="declineprivacypolicy()" id="redb">I don't consent</button>
-    <button onclick="acceptprivacypolicy()" id="blueb">I understand</button>
-    </div>
-  </div>
+  <!-- share widget -->
+  <div id="share-widget"></div>
+  <script src="js/share.js"></script>
+
+  <!-- privacypolicy widget -->
+  <div id="privacy-widget"></div>
+  <script src="js/privacypolicy.js"></script>
 
   <!-- Main Content -->
   <div id="main-content">
@@ -55,26 +48,31 @@
     </nav>
     
     <section class="title">
-        Coco_Ardo's Website
+        <!-- Coco_Ardo -->
     </section>
 
     <section class="loremipsumleft">
         <p>
             <h3>Hello, </h3>
             you found the personal website of Coco_Ardo.<br><br>
-            I do a lot of nerdy stuff. Check out my <a href="https://github.com/RealCocoArdo" target="_blank">Github</a>
+            I'm developing apps and other programs since 2015. Check out my <a href="https://github.com/RealCocoArdo" target="_blank">Github</a>
             and my <a href="https://hub.docker.com/u/cocoardo" target="_blank">Dockerhub</a>.
             <br> They are mainly focusing around:
             <ul>
-                <li>Bitcoin /Lightning /Mining</li>
+                <li>Bitcoin🧡 Lightning⚡ Mining</li>
                 <li>Nostr</li>
                 <li>TOR / I2P</li>
-            </ul>
+            </ul><br>
+            It is particularly important to me to make knowledge about Bitcoin publicly accessible and understandable for everyone.
+            That is why I started giving <a href="/sp/courses.html">lectures</a> and providing resources online.
         </p>
-        <!-- <div class="loremipsumpic">
-            <img src="/pictures/work.PNG" style="border: 2px solid #FDBE00;"></img>
-        </div> -->
-        <br><p>
+        <p>
+            Unfortunately, I don't do this full-time, which is why I have more active and less active years publishing code.
+        </p>
+        <div class="loremipsumpic">
+            <img src="/pictures/work.PNG" ></img>
+        </div>
+        <!-- <br><p>
             I've got experience with:<br>
             <table>
                 <tr><th>Language</th><th>Learning source</th></tr>
@@ -134,7 +132,7 @@
                     <td>QubesOS</td>
                 </tr>
             </table>
-        </p>
+        </p> -->
     </section>
 
     <footer>
