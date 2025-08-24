@@ -10,21 +10,14 @@
     <title>Coco_Ardo</title>
 </head>
 <body>
-    
-  <!-- privacypolicy Popup -->
-  <div id="privacypolicy-popup">
-    <div id="privacypolicy-box">
-    <h2>Privacy policy</h2>
-    <p>
-      This website does not use cookies and does not collect any personal data.
-      This notice is displayed in compliance with the European GDPR law. 
-      <br><br> By clicking "I understand" you confirm that you have read this information.
-      "I don't consent" will lead you to a wikipedia article about the European GDPR law.
-    </p>
-    <button onclick="declineprivacypolicy()" id="redb">I don't consent</button>
-    <button onclick="acceptprivacypolicy()" id="blueb">I understand</button>
-    </div>
-  </div>
+
+  <!-- share widget -->
+  <div id="share-widget"></div>
+  <script src="../js/share.js"></script>
+
+  <!-- privacypolicy widget -->
+  <div id="privacy-widget"></div>
+  <script src="../js/privacypolicy.js"></script>
 
   <!-- Main Content -->
   <div id="main-content">
@@ -76,8 +69,8 @@
         <br><h2>NGO's and projects </h2>
     
         <div class="flexbox">
-            <button onclick="hide('d1')"><h2>Human rigths foundation</h2></button>
-            <button onclick="hide('d2')"><h2>Amnesty International</h2></button>
+            <button onclick="hide('d1')"><h2>Human rigths foundation</h2>(see more)</button>
+            <button onclick="hide('d2')"><h2>Amnesty International</h2>(see more)</button>
         </div>
             <br><div id="d1">
                 <h3>Human Rights Foundation</h3>
@@ -112,8 +105,8 @@
             <br></div>
     
         <div class="flexbox">
-                <button onclick="hide('d3')"><h2>EFF - Electronic Frontier Foundation</h2></button>
-                <button onclick="hide('d4')"><h2>The onion routing (TOR)</h2></button>
+                <button onclick="hide('d3')"><h2>EFF - Electronic Frontier Foundation</h2>(see more)</button>
+                <button onclick="hide('d4')"><h2>The onion routing (TOR)</h2>(see more)</button>
         </div>
                 <br><div id="d3">
                     <h3>Electronic Frontier Foundation</h3>
@@ -144,8 +137,8 @@
                 <br></div>
     
         <div class="flexbox">
-                <button onclick="hide('d5')"><h2>Wikileaks </h2></button>
-                <button onclick="hide('d6')"><h2>TailsOS</h2></button>
+                <button onclick="hide('d5')"><h2>Wikileaks </h2>(see more)</button>
+                <button onclick="hide('d6')"><h2>TailsOS</h2>(see more)</button>
         </div>
                 <br><div id="d5">
                     <h3>WikiLeaks</h3>
@@ -181,8 +174,8 @@
                 <br></div>
 
         <div class="flexbox">
-                <button onclick="hide('d7')"><h2>Seedsigner</h2></button>
-                <button onclick="hide('d8')"><h2>Citadel</h2></button>
+                <button onclick="hide('d7')"><h2>Seedsigner</h2>(see more)</button>
+                <button onclick="hide('d8')"><h2>Citadel</h2>(see more)</button>
         </div>
                 <br><div id="d7">
                     <h3>SeedSigner</h3>
@@ -217,8 +210,8 @@
         <br><h2> Individiums </h2>
         
         <div class="flexbox">
-                    <button onclick="hide('d9')"><h2>Bitcoin Developer</h2></button>
-                    <button onclick="hide('d10')"><h2>Community</h2></button>
+                    <button onclick="hide('d9')"><h2>Bitcoin Developer</h2>(see more)</button>
+                    <button onclick="hide('d10')"><h2>Community</h2>(see more)</button>
         </div>
                     <br><div id="d9">
                         <h3>Bitcoin Developer</h3>
@@ -237,8 +230,8 @@
                     <br></div>
 
         <div class="flexbox">
-                    <button onclick="hide('d11')"><h2>Bitcoin faucets</h2></button>
-                    <button onclick="hide('d0')"><h2>Bitcoin crowdfundings</h2></button>
+                    <button onclick="hide('d11')"><h2>Bitcoin faucets</h2>(see more)</button>
+                    <button onclick="hide('d0')"><h2>Bitcoin crowdfundings</h2>(see more)</button>
         </div>
                 <br><div id="d11">
                     <h3>Bitcoin faucets</h3>
