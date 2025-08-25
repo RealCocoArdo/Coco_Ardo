@@ -135,6 +135,8 @@ body{
             .listimpressum li{
                 margin: 0%;
                 padding: 0%;
+                width: 130px;
+                text-align: center;
                 padding-right: 2.5%;
                 padding-left: 2.5%;
             }
@@ -313,6 +315,7 @@ body{
         width: 45%;
         height: 15vh;
         margin-right: 2.5vw;
+        cursor:pointer;
     }
 
 #d0, #d1, #d2, #d3, #d4, #d5, #d6, #d7, #d8, #d9, #d10, #d11, #d12{
@@ -378,6 +381,9 @@ body{
     .listoverview{
         margin-top: 100px;
     }
+        .listimpressum li{
+            width: auto;
+        }
     .dnpub{
         display: none;
     }
