@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../pictures/Favicon.png" type="image/png">
+    <link rel="stylesheet" href="../main.css">
+    <meta name="lightning" content="lnurlp:Coco_Ardo@minibits.cash"/>
+    <script src="../main.js"></script>
+    <title>Coco_Ardo</title>
+</head>
+<body>
+  <!-- privacypolicy widget -->
+  <div id="privacy-widget"></div>
+  <script src="../js/privacypolicy.js"></script>
+
+  <!-- Main Content -->
+  <!-- searchengine, beginner guide, recom media,  -->
+  <div id="main-content">
+    <nav class="nav">
+        <div class="navlogo">
+            <a href="../index.html"><img src="../pictures/Coco_Ardo.png" alt="Logo" style="border-radius: 20px;"></a>
+        </div>
+        <ul class="topbar">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../p/projects.html">Projects</a></li>
+            <li><a href="../p/opinions.html">Opinions</a></li>
+            <li><a href="../p/donate.html">Donate</a></li>
+            <div class="topbarmenu">
+                <button onclick="dropping()" class="dropbtn">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="../sp/bitcoin.html">Resources on Bitcoin</a>
+                    <a href="../sp/privacy.html">Resources on Privacy</a>
+                    <a href="../sp/courses.html">Courses</a>
+                    <a href="../sp/help.html">Help</a>
+                    <a href="../sp/articles.html">Articles</a>
+                </div>
+            </div>
+        </ul>
+    </nav>
+    <section class="title">
+        Media library
+    </section>
+
+        <section class="loremipsumleft">
+        <div class="mediabar">
+            <button onclick="hide('da')"><h1>Books</h1></button>
+            <button onclick="hide('db')"><h1>Magazines</h1></button>
+            <button onclick="hide('dc')"><h1>Papers and reports</h1></button>
+            <button onclick="hide('dd')"><h1>Podcasts</h1></button>
+            <button onclick="hide('de')"><h1>Musik</h1></button>
+            <button onclick="hide('df')"><h1>Radio</h1></button>
+            <button onclick="hide('dg')"><h1>Videos</h1></button>
+            <button onclick="hide('dh')"><h1>Movies</h1></button>
+        </div>
+
+        <div id="da"><div>
+            <h1>Books</h1>
+                Bitcoin resources <br><a href="https://bitcoin-resources.com/books/" target="_blank">https://bitcoin-resources.com/books/</a><br><br>
+                TheBitcoinManual overview <br><a href="https://thebitcoinmanual.com/downloads/books/" target="_blank">https://thebitcoinmanual.com/downloads/books/</a><br><br>
+                Lopp's overview <br><a href="https://www.lopp.net/bitcoin-information/books.html" target="_blank">https://www.lopp.net/bitcoin-information/books.html</a><br><br>
+                Downbelow I left you a small selction of books I like
+            </div><br>
+            <table class="fixlay">
+                <tr><th>Name</th><th>Author</th><th>ISBN-13</th></tr>
+                <tr>
+                    <td>The Bitcoin Standard: <br>The Decentralized Alternative to Central</td><td>Saifedean Ammous</td><td>978-1119473862</td>
+                    <!-- https://z-epub.com/book/1712 -->
+                </tr>
+                <tr>
+                    <td>The Fiat Standard: <br>The Debt Slavery Alternative to Human Civilization</td><td>Saifedean Ammous</td><td>978-1544526478</td>
+                </tr>
+                <tr>
+                    <td>Bitcoin: Everything divided by 21 million</td><td>Knust Svanholm</td><td>978-9916697313</td>
+                </tr>
+                <tr>
+                    <td>Mastering Bitcoin: <br>Programming the Open Blockchain</td><td> Andreas Antonopoulos</td><td>978-1491954386</td>
+                    <!-- https://github.com/bitcoinbook/bitcoinbook -->
+                </tr>
+                <tr>
+                    <td>Mastering the Lightning Network: <br>A Second Layer Blockchain Protocol for Instant Bitcoin Payments</td><td> Andreas Antonopoulos</td><td>978-1492054863</td>
+                </tr>
+                <tr>
+                    <td>The Blocksize War: <br>The battle over who controls Bitcoin's protocol rules </td><td>Jonathan Bier</td><td>979-8721895609</td>
+                </tr>
+            </table><br><br>
+        </div>
+
+        <div id="db"><table class="fixlay">
+            <h1>Magazines</h1>
+                <h1><tr><th>Name</th><th>Link</th></tr></h1>
+                <tr>
+                    <td>Bitcoinmagazin</td><td><a href="https://store.bitcoinmagazine.com/collections/magazines" target="_blank">https://store.bitcoinmagazine.com</a></td>
+                </tr>
+                <tr>
+                    <td>Einundzwanzig Magazin (German)</td><td><a href="https://einundzwanzig.shop/" target="_blank">https://einundzwanzig.shop</a></td>
+                </tr>
+                <tr>
+                    <td>more comming soon</td><td>...</td>
+                </tr>
+            </table><br><br>
+        </div>
+
+        <div id="dc">
+            <h1>Papers and reports</h1>
+            <table class="fixlay">
+                <h1><tr><th>Title</th><th>By</th><th>Link</th></tr></h1>
+                <tr>
+                    <td>2018 | 2nd-global-cryptoasset-benchmark-study</td><td>Cambridge</td><td><a href="https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2nd-global-cryptoasset-benchmark-study/#.YxoKQ6HP2Uk" target="_blank">jbs.cam.ac.uk/faculty-research/..</a></td>
+                </tr>
+                <tr>
+                    <td> 2019 | Halving und das Lightning Network (Teil 5)</td><td>LeiTech GbR</td><td><a href="https://www.leitech.de/pdf/Bitcoin_Teil_5.pdf" target="_blank">leitech.de/pdf/Bitcoin_Teil_5.pdf</a></td>
+                </tr>
+                <tr>
+                    <td>2023 | Bitcoin’s role in the ESG imperative</td><td>KPMG</td><td><a href="https://kpmg.com/us/en/articles/2023/bitcoin-role-esg-imperative.html" target="_blank">kpmg.com/us/en/articles/..</a></td>
+                </tr>
+                <tr>
+                    <td>2023 | Bitcoin and the energy transition</td><td>IRM</td><td><a href="https://issuu.com/irmglobal/docs/bitcoin_and_the_energy_transition_from_risk_to_opp" target="_blank">issuu.com/irmglobal/docs/bitcoin..</a></td>
+                </tr>
+                <tr>
+                    <td>2023 | Bitcoin First Revisited:</td><td>Fidelity</td><td><a href="https://www.fidelitydigitalassets.com/sites/default/files/documents/1012662.3.0%20Bitcoin%20First%20Revisited_Final.pdf" target="_blank">fidelitydigitalassets.com/sites/..</a></td>
+                </tr>
+                <tr>
+                    <td>2023 | The Lightning Network Grew by 1212% in 2 Years</td><td>River</td><td><a href="https://river.com/learn/files/river-lightning-report-2023.pdf?ref=blog.river.com" target="_blank">river.com/learn/files/river-lightning-report-2023.pdf?ref=blog.river.com</a></td>
+                </tr>
+                <tr>
+                    <td>more comming soon</td><td>...</td><td>...</td>
+                </tr>
+            </table><br><br>
+        </div>
+
+        <div id="dd">
+            <h1>Podcasts</h1>
+                <div class="mobilesize2">Checkout <a href="https://bitcoin-resources.com/podcasts/" target="_blank">https://bitcoin-resources.com/podcasts/</a> for a detailed overview.<br>
+                    Downbelow I left you a small selction of podcasts <b>I like</b></div>
+            <table class="fixlay">
+                <h1><tr><th>Name</th><th>Author</th><th>Link</th></tr></h1>
+                <tr>
+                    <td>Darknet Diaries</td><td>Jack Rhysider</td><td><a href="https://darknetdiaries.com/" target="_blank">https://darknetdiaries.com/</a></td>
+                </tr>
+                <tr>
+                    <td>more comming soon</td><td>...</td><td>...</td>
+                </tr>
+            </table><br><br>
+        </div>
+
+        <div id="de">
+            <h1>Musik</h1>
+            <table class="fixlay">
+                <h1><tr><th>Name</th><th>Author</th><th>Link</th></tr></h1>
+                <tr>
+                    <td>Plebrap (German)</td><td>JustanotherNode, Hanspanzer, tooBitToFail</td><td><a href="https://www.plebrap.space/" target="_blank">www.plebrap.space/</a></td>
+                </tr>
+                <tr>
+                    <td>Bitcoiner (German)</td><td>Atomicc</td><td><a href="https://www.youtube.com/watch?v=YSaVdRP12RU" target="_blank">youtube.com/watch?v=YSaVdRP12RU</a></td>
+                </tr>
+                <tr>
+                    <td>Fiat Matrix (German)</td><td>Atomicc</td><td><a href="https://www.youtube.com/watch?v=Vp7Oww1zQM4" target="_blank">youtube.com/watch?v=Vp7Oww1zQM4</a></td>
+                </tr>
+                <tr>
+                    <td>Banksters Paradise</td><td>Sharkybit</td><td><a href="https://www.youtube.com/watch?v=6ZKzapbQPZA" target="_blank">youtube.com/watch?v=6ZKzapbQPZA</a></td>
+                </tr>
+                <tr>
+                    <td>The Bitcoin Song</td><td>Ohio Toast Ska Man</td><td><a href="https://www.youtube.com/watch?v=QxDPAEE98wQ" target="_blank">youtube.com/watch?v=QxDPAEE98wQ</a></td>
+                </tr>
+                <tr>
+                    <td>The Bitcoin Song</td><td>CryptoContagion</td><td><a href="https://www.youtube.com/watch?v=Otkg4Ftx6GI" target="_blank">youtube.com/watch?v=Otkg4Ftx6GI</a></td>
+                </tr>
+                <tr>
+                    <td>Bitcoin billionaire (A bit shitcoiny)</td><td>Remy</td><td><a href="https://youtu.be/UG7zLhEWanc" target="_blank">youtu.be/UG7zLhEWanc</a></td>
+                </tr>
+                <tr>
+                    <td>Bitcoin Song (A bit shitcoiny)</td><td>Paul Kalkbrenner, Ramirious</td><td><a href="https://www.youtube.com/watch?v=lY32e9Sl4lA" target="_blank">youtube.com/watch?v=lY32e9Sl4lA</a></td>
+                </tr>
+                <tr>
+                    <td>the.onion.router</td><td>Yung Innanet</td><td><a href="https://www.youtube.com/watch?v=9U9vN0tPlH4" target="_blank">youtube.com/watch?v=9U9vN0tPlH4</a></td>
+                </tr>
+                <tr>
+                    <td>Ode to Satoshi (2014)</td><td>Bitcoins & Gravy</td><td><a href="https://www.youtube.com/watch?v=zEQ2nPSL5-0" target="_blank">youtube.com/watch?v=zEQ2nPSL5-0</a></td>
+                </tr>
+                <tr>
+                    <td>Bitcoin Slang</td><td>Robbiep808x</td><td><a href="https://www.youtube.com/watch?v=tvpOdef8CCc" target="_blank">youtube.com/watch?v=tvpOdef8CCc</a></td>
+                </tr>
+                <tr>
+                    <td>Einundzwanzig PlebMusic </td><td>Several artists</td><td><a href="https://www.youtube.com/watch?v=NwX4nk_buyk&list=PLzH0J0sBMcRp6qEivQaiREvtadud7gxzh&index=5" target="_blank">youtube.com/watch?v=NwX4nk_buyk&list..</a></td>
+                </tr>
+                <tr>
+                    <td>Satoshi lightning (German)</td><td>Bitcoin - Magic Internet Money</td><td><a href="https://www.youtube.com/watch?v=l4ihMpZJbJk" target="_blank">youtube.com/watch?v=l4ihMpZJbJk</a></td>
+                </tr>
+                <tr>
+                    <td>more comming soon</td><td>...</td><td>...</td>
+                </tr>
+            </table><br><br>
+        </div>
+
+        <div id="df">
+            <h1>Radio</h1>
+            <table class="fixlay">
+                <h1><tr><th>Name</th><th>Platform</th><th>Link</th></tr></h1>
+                <tr>
+                    <td>NoderunnersRadio</td><td>Telegram</td><td><a href="https://t.me/NoderunnersRadio" target="_blank">t.me/NoderunnersRadio</a></td>
+                </tr>
+            </table><br><br>
+        </div>
+
+        <div id="dg">
+            <h1>Videos </h1>
+            <table class="fixlay">
+                <h1><tr><th>Name</th><th>Tag</th><th>Link</th></tr></h1>
+                <tr>
+                    <td>BitcoinTv</td><td>Comm.</td><td><a href="https://bitcointv.com/home" target="_blank">https://bitcointv.com/home</a></td>
+                </tr>
+                <tr>
+                    <td>Jonathan Levi</td><td>Maxi</td><td><a href="https://www.youtube.com/c/JonathanLeviBitcoinfortheMasses" target="_blank">youtube.com/c/JonathanLevi..</a></td>
+                </tr>
+                <tr>
+                    <td>BTC Sessions</td><td>Maxi</td><td><a href="https://www.youtube.com/c/BTCSessions" target="_blank">youtube.com/c/BTCSessions</a></td>
+                </tr>
+                <tr>
+                    <td>Simply Bitcoin</td><td>Maxi</td><td><a href="https://youtube.com/@SimplyBitcoin" target="_blank">youtube.com/@SimplyBitcoin</a></td>
+                </tr>
+                <tr>
+                    <td>What Bitcoin Did</td><td>Maxi</td><td><a href="#https://www.youtube.com/c/WhatBitcoinDidPodcast" target="_blank">youtube.com/c/WhatBitcoinDid..</a></td>
+                </tr>
+                <tr>
+                    <td>Didi Taihuttu</td><td>OG</td><td><a href="https://www.youtube.com/c/TheBitcoinfamily/videos" target="_blank">youtube.com/c/TheBitcoinfam..</a></td>
+                </tr>
+                <tr>
+                    <td>Ben Arc</td><td>Maxi</td><td><a href="https://www.youtube.com/channel/UCGXU2Ae5x5K-5aKdmKqoLYg/featured" target="_blank">youtube.com/channel/UCGX..</a></td>
+                </tr>
+                <tr>
+                    <td>Andreas Antonopolis</td><td>OG</td><td><a href="https://www.youtube.com/c/aantonop/videos" target="_blank">youtube.com/c/aantonop</a></td>
+                </tr>
+                <tr>
+                    <td>Satoshi Radio</td><td>Maxi</td><td><a href="https://www.youtube.com/c/SatoshiRadio/videos" target="_blank">youtube.com/c/SatoshiRadio/..</a></td>
+                </tr>
+                <tr>
+                    <td>Connect The World</td><td>Maxi</td><td><a href="https://www.youtube.com/c/ConnectTheWorld/featured" target="_blank">youtube.com/c/ConnectTheWorld..</a></td>
+                </tr>
+                <tr>
+                    <td>Bitcoin University / (Trader University)</td><td>Maxi</td><td><a href="https://www.youtube.com/@Bitcoin_University/featured" target="_blank">youtube.com/@Bitcoin_University</a></td>
+                </tr>
+                <tr>
+                    <td>Rene Pickhardt</td><td>Maxi</td><td><a href="https://www.youtube.com/c/RenePickhardt/featured" target="_blank">youtube.com/c/RenePickhardt/..</a></td>
+                </tr>
+                <tr>
+                    <td>Bitmaker</td><td>Pleb</td><td><a href="https://youtube.com/@bitmaker_" target="_blank">youtube.com/@bitmaker_</a></td>
+                </tr>
+                <tr>
+                    <td>AndyMcCann42</td><td>Pleb</td><td><a href="https://www.youtube.com/@AndyMcCann42" target="_blank">youtube.com/@AndyMcCann42</a></td>
+                </tr>
+                <tr>
+                    <td>402 Payment Required</td><td>Maxi</td><td><a href="https://www.youtube.com/@402PaymentRequired" target="_blank">youtube.com/@402PaymentRequired</a></td>
+                </tr>
+                <tr>
+                    <td>Ioni Appelberg</td><td>Maxi</td><td><a href="https://youtube.com/@IoniAppelberg" target="_blank">youtube.com/@IoniAppelberg</a></td>
+                </tr>
+                <tr>
+                    <td>Giacomo Zucco</td><td>Maxi</td><td><a href="https://youtube.com/@giacomozucco8619" target="_blank">youtube.com/@giacomozucco8619</a></td>
+                </tr>
+                <tr>
+                    <td>Hotel princess</td><td>Company</td><td><a href="https://www.youtube.com/@BITCOIN-HOTEL" target="_blank">youtube.com/@BITCOIN-HOTEL</a></td>
+                </tr>
+                <tr>
+                    <td>Blocktrainer</td><td>Maxi</td><td><a href="https://www.youtube.com/@Blocktrainer" target="_blank">youtube.com/@Blocktrainer</a></td>
+                </tr>
+                <tr>
+                    <td>Einundzwanzig</td><td>Comm.</td><td><a href="https://www.youtube.com/@EinundzwanzigPodcast" target="_blank">youtube.com/@Einundzwanzig</a></td>
+                </tr>
+                <tr>
+                    <td>Bitcoin Privacy /(OrangedMike) / (TrustBTC)</td><td>Pleb</td><td><a href="https://www.youtube.com/@OrangedMike" target="_blank">youtube.com/@OrangedMike</a></td>
+                </tr>
+                <tr>
+                    <td>Lunaticoin</td><td>Maxi</td><td><a href="https://www.youtube.com/@Lunaticoin" target="_blank">youtube.com/@Lunaticoin</a></td>
+                </tr>
+                <tr>
+                    <td>Documenting Bitcoin</td><td>...</td><td><a href="https://youtube.com/@DocumentingBTC" target="_blank">youtube.com/@DocumentingBTC</a></td>
+                </tr>
+                <tr>
+                    <td>Découvre Bitcoin</td><td>Maxi</td><td><a href="https://www.youtube.com/channel/UCANjJ55UmYmoXm_SW--psXQ" target="_blank">youtube.com/channel/...</a></td>
+                </tr>
+                <tr>
+                    <td>Southern Bitcoiner</td><td>Maxi</td><td><a href="https://www.youtube.com/@SouthernBitcoiner" target="_blank">youtube.com/@SouthernBitcoiner</a></td>
+                </tr>
+                <tr>
+                    <td>Swan Bitcoin</td><td>Company</td><td><a href="https://www.youtube.com/@Swan_Bitcoin/" target="_blank">youtube.com/@Swan_Bitcoin</a></td>
+                </tr>
+                <tr>
+                    <td>Jameson Lopp</td><td>OG</td><td><a href="https://youtube.com/@JamesonLopp/" target="_blank">youtube.com/@JamesonLopp</a></td>
+                </tr>
+                <tr>
+                    <td>Bitcoin Trading Card Game</td><td>Company</td><td><a href="https://youtube.com/@Bitcointradingcards/" target="_blank">youtube.com/@Bitcointradingcards</a></td>
+                </tr>
+                <tr>
+                    <td>UK Bitcoin Master</td><td>...</td><td><a href="https://youtube.com/@UKBitcoinMaster/" target="_blank">youtube.com/@UKBitcoinMaster/</a></td>
+                </tr>
+                <tr>
+                    <td>The Bitcoin Chemist</td><td>...</td><td><a href="https://youtube.com/@thebitcoinalchemist9568/" target="_blank">youtube.com/@thebitcoinalchemist</a></td>
+                </tr>
+                <tr>
+                    <td>Stephan Livera</td><td>...</td><td><a href="https://youtube.com/@StephanLivera/" target="_blank">youtube.com/@StephanLivera</a></td>
+                </tr>
+                <tr>
+                    <td>Bitcoin Kindergarten</td><td>...</td><td><a href="https://youtube.com/@BitcoinKindergarten/" target="_blank">youtube.com/@BitcoinKindergarten</a></td>
+                </tr>
+                <tr>
+                    <td>Ministry of Nodes</td><td>...</td><td><a href="https://youtube.com/@MinistryofNodes/" target="_blank">youtube.com/@MinistryofNodes</a></td>
+                </tr>
+                <tr>
+                    <td>Ian Major</td><td>Maxi</td><td><a href="https://youtube.com/@IanMajor/" target="_blank">youtube.com/@IanMajor</a></td>
+                </tr>
+                <tr>
+                    <td>Kinetic Fiance</td><td>Pleb</td><td><a href="https://youtube.com/@KineticFinance?feature=shared" target="_blank">youtube.com/@KineticFinance</a></td>
+                </tr>
+                <tr>
+                    <td>Bitcoin Burg</td><td>Comm.</td><td><a href="https://www.youtube.com/@bitcoinburg4287" target="_blank">youtube.com/@bitcoinburg</a></td>
+                </tr>
+                <tr>
+                    <td>more comming soon</td><td>...</td><td>...</td>
+                </tr>
+            </table><br><br>
+        </div>
+
+        <div id="dh">
+            <h1>Movies, documentaries and state TV</h1>
+            <table class="fixlay">
+                <h1><tr><th>Name</th><th>By </th><th>Link</th></tr></h1>
+                <tr>
+                    <td>Bitcoin, wie alles begann - Mysterium Satoshi (German)</td><td>ARTE (German and French state TV)</td><td><a href="https://www.youtube.com/watch?v=hVqEFpM9nIs&list=PLlQWnS27jXh8XGLZ1ljEC3-UarBjYQWB3" target="_blank">https://www.youtube.com/watch?v=hVqEFpM9..</a></td>
+                </tr>
+                <tr>
+                    <td>Krypto, #Bitcoin & Co: Revolution oder Spekulation? (German)</td><td>Terra X (German state TV)</td><td><a href="https://www.youtube.com/watch?v=k2kWZemG1WE" target="_blank">https://www.youtube.com/watch?v=k2kWZemG1WE</a></td>
+                </tr>
+                <tr>
+                    <td>Kryptowährung Bitcoin - jetzt erst recht? (German)</td><td>ZDF (German state TV)</td><td><a href="https://www.zdf.de/show/mai-think-x-die-show/maithink-x-folge-16-100.html" target="_blank">https://www.zdf.de/show/mai-think-x-die-show/</a></td>
+                </tr>
+                <tr>
+                    <td>Shiny Flakes</td><td>Netflix</td><td><a href="https://www.netflix.com/title/81207826" target="_blank">https://www.netflix.com/title/81207826</a></td>
+                </tr>
+                <tr>
+                    <td>A Sly, Roundabout Way -2022</td><td>@2TeachBTC</td><td><a href="https://aslyroundaboutway.com/" target="_blank">https://aslyroundaboutway.com/</a></td>
+                </tr>
+                <tr>
+                    <td>more comming soon</td><td>...</td><td>...</td>
+                </tr>
+            </table>
+        </div>
+        </section>
+
+    <footer>
+        <ul class="listoverview">
+            <li><a href="https://njump.me/npub1cj9xlvy6qd2ck8k02qw79nsf4jf4hslu94e77k6evdl8t0xa7f2syga2tw" target="_blank"><img src="../pictures/Nostr.png" alt="Nostr"></a></li>
+            <li><a href="https://www.reddit.com/user/Coco_Ardo/" target="_blank"><img src="../pictures/Reddit.png" alt="Reddit"></a></li>
+            <li><a href="https://github.com/RealCocoArdo" target="_blank"><img src="../pictures/Github.png" alt="Github"></a></li>
+            <li><a href="https://hub.docker.com/u/cocoardo" target="_blank"><img src="../pictures/docker.png" alt="Docker"></a></li>
+        </ul>
+    </footer>
+    <ul class="listimpressum">
+        <li><h5><a href="../p/contact.html">Contact</a></h5></li>
+        <li><h5><a href="../p/privacyPolicy.html">Privacy policy</a></h5></li>
+        <li><h5><a href="https://github.com/RealCocoArdo/Coco_Ardo/blob/main/LICENSE.md" target="_blank">@<script>document.write(/\d{4}/.exec(Date())[0])</script> License</a></h5></li>
+    </ul>
+    </footer>
+    <!-- share widget -->
+    <div id="share-widget"></div>
+    <script src="../js/share.js"></script>
+  </div>
+</body>
+</html>

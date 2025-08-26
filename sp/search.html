@@ -33,7 +33,7 @@
                     <div class="bar"></div>
                 </button>
                 <div id="myDropdown" class="dropdown-content">
-                    <a id="blue">Resources on Bitcoin</a>
+                    <a href="../sp/bitcoin.html">Resources on Bitcoin</a>
                     <a href="../sp/privacy.html">Resources on Privacy</a>
                     <a href="../sp/courses.html">Courses</a>
                     <a href="../sp/help.html">Help</a>
@@ -43,17 +43,44 @@
         </ul>
     </nav>
     <section class="title">
-        Resources on Bitcoin🧡
+        Coco_Ardo's <br> small<br> Bitcoin searchengine
     </section>
 
-    <section class="boxes">
-        <div class="flexbox">
-            <a href="../sp/beginner.html"><h3>Beginner guide</h3></a>
-            <a href="../sp/media.html"><h3>Media library</h3></a>
-        </div><br>
-        <div class="flexbox">
-            <a href="../sp/search.html"><h3>Bitcoin searchengine</h3></a>
-        </div>
+    <section class="loremipsumleft">
+        <input type="text" id="searchInput" placeholder="Search..." />
+        <br><br><div id="searchResults"></div>
+
+        <script src="../search-data.js"></script>
+        <script>
+        const input = document.getElementById('searchInput');
+        const resultsDiv = document.getElementById('searchResults');
+
+        input.addEventListener('input', function () {
+        const query = input.value.toLowerCase();
+        resultsDiv.innerHTML = "";
+
+        if (query.length < 2) return;
+
+        const results = searchData.filter(item =>
+            item.title.toLowerCase().includes(query) ||
+            // item.content.toLowerCase().includes(query) ||
+            (item.tags && item.tags.some(tag => tag.toLowerCase().includes(query)))
+        );
+
+        if (results.length === 0) {
+            resultsDiv.innerHTML = '<p>No matches found.<br><ul><li>Try searching for single keywords instead</li><li>Upper/Lower letters dont matter</li><li>Type "Coco_Ardo" to see all results</li></ul>If you think that I am missing important keywords feel free to <a href="p/contact.html">reach out</a> to me.</p>';
+        } else {
+            results.forEach(item => {
+            const el = document.createElement("div");
+            el.innerHTML = `
+                <a href="${item.url}" target="_blank"><strong>${item.title}</strong></a><br>
+                <small>${item.content.substring(0, 100)}...</small>
+            `;
+            resultsDiv.appendChild(el);
+            });
+        }
+        });
+        </script>
     </section>
 
     <footer>
