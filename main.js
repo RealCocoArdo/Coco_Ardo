@@ -21,8 +21,13 @@ function hide(variable1) {
     const targetDiv = document.getElementById(variable1);
     
     if (targetDiv.style.display === "block") {
+      if(targetDiv.className === "nodouble") {
+        targetDiv.style.display = "block";
+        }
+      else{
         // If the target div is already visible, hide it
         targetDiv.style.display = "none";
+      }
     } else {
         // Show the target div and hide others
         divs.forEach(div => {
