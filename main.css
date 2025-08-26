@@ -253,6 +253,7 @@ body{
         }
             .fixlay{
                 table-layout: fixed;
+                word-wrap: break-word;
             }
             table a{
                 word-wrap: break-word;
