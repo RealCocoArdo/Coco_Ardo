@@ -269,29 +269,39 @@ body{
             }
 
 .projects{
-    margin: 0 20% 50px 20%;
+    margin: 0 25% 135px 25%;
     display: flex;
-    /* justify-content: space-evenly; */
+    justify-content: space-between;
 }
     .projects a{
         color: #FDBE00;
-        /* text-decoration: none; */
     }
         .projects a:hover{
             color: rgb(70, 206, 240);
         }
-    .p1{
+
+/* Text left */
+    .p1left{
         text-align: left;
-        padding: 0.5%;
-        margin-top: 8%;
-        width: 80%;
     }
-    .p2{
-        width: 15vw;
-        padding-top: 70px;
-        margin-right: 3vw;
+    .p2right{
+        width: auto;
+        margin-left: 50px;
     }
-        .p2 img{
+        .p2right img{
+            width: 225px;
+            border: 2px solid #FDBE00;
+        }
+
+/* Text right */
+    .p1right{
+        text-align: left;
+    }
+    .p2left{
+        width: auto;
+        margin-right: 50px;
+    }
+        .p2left img{
             width: 15vw;
             border: 2px solid #FDBE00;
         }
@@ -457,18 +467,15 @@ body{
 
 /* Projects */
 .projects{
-    margin: 0 10% 50px 10%;
+    margin: 0 10% 100px 10%;
     flex-direction: column;
 }
-    .p1{
-        width: 100%;
+    .p2right{
+        display: none;
     }
-    .p2{
-        width: 100%;
+    .p2left{
+        display: none;
     }
-        .p2 img{
-            width: 100%;
-        }
 
 .boxes{
     margin: 0 7.5% 0 7.5%;
