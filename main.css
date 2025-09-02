@@ -504,7 +504,7 @@ body{
 
 /* Projects */
 .projects{
-    margin: 0 10% 100px 10%;
+    margin: 0 0 0 0;
     flex-direction: column;
 }
     .p2right{
@@ -512,6 +512,19 @@ body{
     }
     .p2left{
         display: none;
+    }
+
+.mobilebox{
+        margin: 0 10% 40px 10%;
+        padding: 15px 10px 15px 10px;
+        background: #272933;
+        border: #FFFFFF 1px solid;
+        color: #FFFFFF;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+} 
+    .mobilebox b{
+        color: #FFFFFF;
     }
 
 /* Help */
