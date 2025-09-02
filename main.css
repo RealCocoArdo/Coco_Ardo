@@ -268,6 +268,43 @@ body{
             background-color: #062d36;
             }
 
+    .help{
+        margin: 0 25% 80px 25%;
+        display: flex;
+        background-color: grey;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        overflow: hidden;
+        min-height: 250px; 
+        height: auto; 
+    }
+        .help a{
+            color: #FDBE00;
+        }
+            .help a:hover{
+                color: rgb(70, 206, 240);
+            }
+    .hpic{
+        flex: 1;
+        width: 200px;
+    }
+        .hpic img{
+            width: 200px;
+            height: 100%;
+        }
+    .htitle{
+        font-size: 1.1em;
+    }
+    .htext{
+        font-size: 0.9em;
+        flex: 3;
+        color: black;
+        padding: 25px 15px 25px 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
 .projects{
     margin: 0 25% 135px 25%;
     display: flex;
@@ -476,6 +513,22 @@ body{
     .p2left{
         display: none;
     }
+
+/* Help */
+.help{
+    margin: 0 10% 60px 10%;
+    height: auto;
+    max-height: 400px;
+}
+    .htext{
+        font-size: 0.6em;
+    }
+        .htitle{
+            font-size: 1.5em;
+        }
+        .hpic img{
+            width: 130px;
+        }
 
 .boxes{
     margin: 0 7.5% 0 7.5%;
