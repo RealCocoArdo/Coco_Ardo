@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // HTML for button + Popup dynamic
   container.innerHTML = `
     <div id="notifi" style="display:none; position:fixed; top:20px; left:50%; transform:translateX(-50%); background:red; color:white; padding:10px 20px; border-radius:5px; z-index:10000;">
-      No acces.
+      No access.
     </div>
     <div id="privacypolicy-popup">
     <div id="privacypolicy-box">
