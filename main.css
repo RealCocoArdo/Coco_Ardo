@@ -333,6 +333,7 @@ body{
 /* Text right */
     .p1right{
         text-align: left;
+        list-style-position: inside;
     }
     .p2left{
         width: auto;
@@ -526,7 +527,7 @@ body{
     .mobilebox b{
         color: #FFFFFF;
     }
-
+    
 /* Help */
 .help{
     margin: 0 10% 60px 10%;
