@@ -53,5 +53,9 @@ function acceptprivacypolicy() {
     });
 
 function declineprivacypolicy() {
-window.location.href = "https://en.wikipedia.org/wiki/General_Data_Protection_Regulation"
+  const notification = document.getElementById('notifi');
+    notification.style.display = 'block';
+    setTimeout(() => {
+      notification.style.display = 'none';
+    }, 1000);
 }
